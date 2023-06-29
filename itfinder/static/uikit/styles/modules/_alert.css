@@ -1,0 +1,50 @@
+/* Styles for the alert element, setting display, gap, alignment, padding, border, and margins */
+.alert {
+  display: inline-flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--color-white-light);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+/* Styles for the alert and its message, setting background color, text color, font size, and font weight */
+.alert,
+.alert > .alert__message {
+  background-color: var(--color-main-light);
+  color: var(--color-main);
+  font-size: 1.4rem;
+  font-weight: var(--font-medium);
+}
+
+/* Specific styles for error alerts and their messages, setting background and text color */
+.alert.alert--error,
+.alert.alert--error > .alert__message {
+  background-color: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+/* Specific styles for success alerts and their messages, setting background and text color */
+.alert.alert--success,
+.alert.alert--success > .alert__message {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+/* Styles for the close button of an alert, setting background, cursor, border, outline, font size, and transition */
+.alert > .alert__close {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: transparent;
+  font-size: 2rem;
+  transition: var(--generic-transition);
+}
+
+/* Opacity for the close button of an alert when hovered */
+.alert > .alert__close:hover {
+  opacity: 0.85;
+}

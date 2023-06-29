@@ -1,0 +1,38 @@
+/* Animation keyframes for moving in from the left. It starts at 0% width and scaled up, moves to 70% width and normal scale at 80%, and ends at 100% width */
+@keyframes move-in-left {
+  0% {
+    width: 0%;
+    transform: scale(2);
+  }
+
+  80% {
+    width: 70%;
+    transform: scale(1);
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* Animation keyframes for a loading animation. It starts with the element scaled down to 0 and ends with the element at its normal size */
+@keyframes loading {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+/* Animation keyframes for a spinning animation. It starts with the element unrotated and ends with the element rotated 360 degrees */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,53 @@
+/* This block styles a container for input tags, making it responsive and interactive. */
+.input-tags {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-light);
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+  cursor: text;
+}
+
+/* This rule changes border color on focus within the input-tags container. */
+.input-tags:focus-within {
+  border: 2px solid var(--color-main);
+}
+
+/* This block sets styles for input fields within the input-tags container. */
+.input-tags input {
+  border: none;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+/* This rule removes outline from input field when focused. */
+.input-tags input:focus {
+  outline: none;
+}
+
+/* This block sets display styles for tag list within the input-tags container. */
+.input-tag-list {
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: wrap !important;
+  row-gap: 4px;
+}
+
+/* This rule ensures the tag items do not break into multiple lines. */
+.input-tag-item {
+  white-space: nowrap;
+}
+
+/* This block sets margin for 'small' child elements within input-tag-item. */
+.input-tag-item small {
+  margin-right: 6px;
+}
+
+/* This rule changes color and cursor for 'i' child elements within input-tag-item. */
+.input-tag-item i {
+  color: var(--color-white);
+  cursor: pointer;
+}

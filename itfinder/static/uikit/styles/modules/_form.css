@@ -1,0 +1,207 @@
+/* Form Styling */
+/* This is the main class for the form styling. It sets the display property. */
+.form {
+  display: block;
+}
+
+/* This class sets the display property for inline form. */
+.form--inline {
+  display: inline-block;
+}
+
+/* This class sets margins for the form field. */
+.form__field {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* This class sets color, font weight, display and font size for the form error message. */
+.form__error {
+  color: var(--color-error);
+  font-weight: var(--font-medium);
+  display: block;
+  font-size: 1.4rem;
+}
+
+/* These classes set display, margin-bottom, and color for the form label and field label. */
+.form__label,
+.form__field > label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+/* This class changes display and margin-bottom for inline form label. */
+.form__label--inline {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+}
+
+/* This class hides the form label. */
+.form__label--hidden {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+/* These classes apply common styles to various types of form inputs. */
+input.input[type='text'],
+input.input[type='email'],
+input.input[type='password'],
+input.input[type='number'],
+select.input,
+textarea.input {
+  min-width: 24rem;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-light);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-bg);
+}
+
+/* These classes apply focus and active styles to various types of form inputs. */
+input.input[type='text']:focus,
+input.input[type='email']:focus,
+input.input[type='password']:focus,
+input.input[type='number']:focus,
+input.input[type='text']:active,
+input.input[type='email']:active,
+input.input[type='password']:active,
+input.input[type='number']:active,
+select.input:focus,
+select.input:active,
+textarea.input:focus,
+textarea.input:active {
+  outline: none;
+  border: 2px solid var(--color-main);
+}
+
+/* These classes set display and align-items for radio and checkbox form fields. */
+.form__field--radio,
+.form__field--checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/* These classes set margin-right, font-size, font-weight and color for the text in radio and checkbox form fields. */
+.form__field--radio p,
+.form__field--checkbox p {
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+/* These classes set display, margin-left, margin-right, margin-bottom, cursor and color for the label in radio and checkbox form fields. */
+.form__field--radio input + label,
+.form__field--checkbox input + label {
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+/* These classes set width, min-height, and resize for the textarea form field. */
+.input--textarea {
+  width: 100%;
+  min-height: 14rem;
+  resize: none;
+}
+
+/* This class sets min-height for the small textarea form field. */
+.input--textarea--sm {
+  min-height: 8rem;
+}
+
+/* These classes style the custom checkbox form field. */
+.input.input--checkbox,
+.input.input--radio {
+  position: relative;
+  cursor: pointer;
+}
+
+/* These classes set transition, transform, content, position, left, top, z-index, width, height, border, and border-top-style and border-right-style for the custom checkbox form field. */
+.input.input--checkbox::before {
+  transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+  transform: rotate(-45deg) scale(0, 0);
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1.4px;
+  z-index: 1;
+  width: 0.8rem;
+  height: 0.4rem;
+  border: 2.5px solid var(--color-main);
+  border-top-style: none;
+  border-right-style: none;
+}
+
+/* This class scales the custom checkbox when checked. */
+.input.input--checkbox:checked::before {
+  transform: rotate(-45deg) scale(1, 1);
+}
+
+/* These classes set content, position, left, bottom, width, height, background, border, and cursor for the custom checkbox form field. */
+.input.input--checkbox::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-gray);
+  cursor: pointer;
+}
+
+/* This class changes the background and border color of the custom checkbox when checked. */
+.input.input--checkbox:checked::after {
+  background: var(--color-main-light);
+  border-color: var(--color-main);
+}
+
+/* These classes style the custom radio form field. */
+.input.input--radio::before {
+  transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+  transform: scale(0, 0);
+  content: '';
+  position: absolute;
+  left: 3.5px;
+  top: 2.5px;
+  z-index: 1;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--color-main);
+  border-radius: 50%;
+}
+
+/* This class scales the custom radio when checked. */
+.input.input--radio:checked::before {
+  transform: scale(1, 1);
+}
+
+/* These classes set content, position, top, left, width, height, background, border, border-radius for the custom radio form field. */
+.input.input--radio::after {
+  content: '';
+  position: absolute;
+  top: -0.25rem;
+  left: -0.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-gray);
+  border-radius: 50%;
+}
+
+/* This class changes the background of the custom radio when checked. */
+.input.input--radio:checked::after {
+  background: var(--color-main-light);
+}
+
+/* This class sets margin-right for all children of the form field action class except the last child. */
+.form__field--action > *:not(:last-child) {
+  margin-right: 1rem;
+}

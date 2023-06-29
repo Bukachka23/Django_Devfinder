@@ -1,0 +1,59 @@
+/* Styles for a flexible grid container */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Styles for the child column elements in the grid container */
+.grid > .column {
+  min-width: 28rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Styles for a three column layout in the grid */
+.grid--three > .column {
+  flex-basis: 100%;
+}
+
+/* Media query to adjust grid--three layout for screen sizes 800px and above */
+@media screen and (min-width: 800px) {
+  .grid--three {
+    margin-right: -2%;
+  }
+
+  .grid--three > .column {
+    margin-right: 2%;
+    flex-basis: 48%;
+  }
+}
+
+/* Media query to adjust grid--three layout for screen sizes 1200px and above */
+@media screen and (min-width: 1200px) {
+  .grid--three {
+    margin-right: -2.33%;
+  }
+
+  .grid--three > .column {
+    margin-right: 2.33%;
+    flex-basis: 31%;
+  }
+}
+
+/* Styles for a two column layout in the grid */
+.grid--two > .column {
+  flex-basis: 100%;
+}
+
+/* Media query to adjust grid--two layout for screen sizes 800px and above */
+@media screen and (min-width: 800px) {
+  .grid--two {
+    margin-right: -2%;
+  }
+
+  .grid--two > .column {
+    margin-right: 2%;
+    flex-basis: 48%;
+  }
+}

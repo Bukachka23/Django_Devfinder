@@ -1,0 +1,56 @@
+/* Card Styling */
+/* This is the main class for the card styling. It defines common properties such as border-radius,
+background color, border, width, height, margin-top, margin-bottom, and overflow. */
+.card {
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-light);
+  width: auto;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+/* This class applies a transition effect to the card link. */
+.card__link {
+  transition: all 0.3s ease-in;
+}
+
+/* This class removes text decoration on hover of the card link. */
+.card__link:hover {
+  text-decoration: none;
+}
+
+/* These classes set padding for the card body and header. */
+.card__body,
+.card__header {
+  padding: 2rem 2.5rem;
+}
+
+/* This class sets padding and border for the card header. */
+.card__header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1.5px solid var(--color-light);
+}
+
+/* This class sets the font size and weight for the card header title. */
+.card__headerTitle {
+  font-size: 2.2rem;
+  font-weight: var(--font-medium);
+}
+
+/* This class changes text decoration and color on hover of the card link within the card header. */
+.card__header .card__link:hover {
+  text-decoration: underline;
+  color: var(--color-main);
+}
+
+/* These classes apply a dark theme to the card and its header. */
+.card.card--dark {
+  background-color: var(--color-light);
+}
+.card.card--dark .card__header {
+  box-shadow: var(--generic-shadow);
+}

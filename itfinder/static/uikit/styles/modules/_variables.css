@@ -1,0 +1,42 @@
+/* This block sets global CSS variables (also known as custom properties) that can be used throughout the stylesheet. These variables help maintain consistent theming and make it easier to make changes as they only need to be updated in one place. */
+:root {
+  /* These variables define the primary colors used in the design. */
+  --color-main: #5aa5b9;
+  --color-main-light: #e6faff;
+  --color-sub: #3f4156;
+  --color-sub-light: #51546e;
+  --color-sub-lighter: #ededfd;
+
+  /* These variables define various shades of gray for text and background colors. */
+  --color-text: #737373;
+  --color-gray: #8b8b8b;
+  --color-light: #e5e7eb;
+  --color-light-gray: #767676;
+
+  /* These variables are used for the primary background color and different shades of white. */
+  --color-bg: #f8fafd;
+  --color-white: #fffefd;
+  --color-white-light: #f3f3f3;
+
+  /* These variables define the colors used for indicating success and error states. */
+  --color-success: #359e64;
+  --color-success-bg: #def8e8;
+  --color-error: #fc4b0b;
+  --color-error-bg: #fff2ee;
+
+  /* These variables define the fonts used in the design. */
+  --font-base: 'Poppins', arial, helvetica, 'Segoe UI', roboto, ubuntu, sans-serif;
+  --font-monospace: 'Fira Code', 'Courier New', courier, monospace;
+
+  /* These variables define the weights for the different fonts. */
+  --font-regular: 300;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* This variable defines a generic shadow effect that can be applied to elements. */
+  --generic-shadow: 1px 1px 5px #00000010;
+
+  /* This variable defines a generic transition effect that can be applied to elements. */
+  --generic-transition: all 0.3s ease-in-out;
+}
+

@@ -1,0 +1,56 @@
+/* Styles for the author box, which is set up as an inline-flex box with items aligned in the center and space distributed between them */
+.author-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the author's info inside the author box, including margin and line height */
+.author-box__info {
+  margin-left: 1rem;
+  line-height: 1.2;
+}
+
+/* Specific styles for medium and large author boxes, adjusting the margin and line height */
+.author-box--md .author-box__info {
+  margin-left: 1.6rem;
+  line-height: 1.3;
+}
+
+.author-box--lg .author-box__info {
+  margin-left: 2.8rem;
+  line-height: 1.6;
+}
+
+/* Styles for the author's name, setting font size, weight, and color */
+.author-box__name {
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
+  color: var(--color-sub);
+}
+
+/* Specific styles for the author's name in medium and large author boxes, adjusting the font size */
+.author-box--md .author-box__name {
+  font-size: 1.65rem;
+}
+
+.author-box--lg .author-box__name {
+  font-size: 2.4rem;
+}
+
+/* Styles for the author's handle, setting font size, color, and weight */
+.author-box__handle {
+  font-size: 1.4rem;
+  color: var(--color-text);
+  font-weight: var(--font-regular);
+}
+
+/* Specific styles for the author's handle in medium and large author boxes, adjusting the font size */
+.author-box--md .author-box__handle {
+  font-size: 1.5rem;
+}
+
+.author-box--lg .author-box__handle {
+  font-size: 1.65rem;
+}
+

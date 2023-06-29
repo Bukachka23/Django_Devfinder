@@ -1,0 +1,43 @@
+/* Universal styles applied to all elements, setting margin, padding, box-sizing, text-rendering, color, and font-size */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Setting the root font size for the html element, and then adjusting it at different screen sizes using media queries */
+html {
+  font-size: 50%;
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Styles for the body element, setting line height, font weight, fontsize, color, background color, and minimum height */
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
